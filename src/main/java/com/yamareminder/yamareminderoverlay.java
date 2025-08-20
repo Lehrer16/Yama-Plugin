@@ -1,4 +1,4 @@
-package com.YamaReminder;
+package com.yamareminder;
 
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayPosition;

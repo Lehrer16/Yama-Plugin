@@ -1,4 +1,4 @@
-package com.YamaReminder;
+package com.yamareminder;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
