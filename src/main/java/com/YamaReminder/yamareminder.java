@@ -1,20 +1,16 @@
 
 package com.YamaReminder;
 
-import com.google.inject.Provides;
 import javax.inject.Inject;
 import lombok.extern.slf4j.Slf4j;
-import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.api.events.NpcSpawned;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.NPC;
-import net.runelite.client.util.Text;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
-import java.awt.image.BufferedImage;
 
 @PluginDescriptor(
 	name = "Yama Reminder",
@@ -22,13 +18,13 @@ import java.awt.image.BufferedImage;
 	tags = {"boss", "reminder", "health", "yama", "Yama"}
 )
 @Slf4j
-public class YamaReminder extends Plugin {
+public class yamareminder extends Plugin {
 	@Inject
 	private ClientToolbar clientToolbar;
 	@Inject
 	private net.runelite.client.ui.overlay.OverlayManager overlayManager;
 	@Inject
-	private YamaReminderOverlay overlay;
+	private yamareminderoverlay overlay;
 	private NavigationButton navButton;
 	@Inject
 	private net.runelite.api.Client client;
